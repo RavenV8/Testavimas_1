@@ -32,9 +32,3 @@ python3 -m unittest test_app.py -v
 28. **test_update_passenger_info** - atnaujinti keleivio informaciją  
 29. **test_register_passenger_invalid_info** - neteisinga keleivio informacija
 
-test_get_flight_by_passenger - skrydis pagal keleivį
-test_check_passenger_baggage - tikrinti keleivio bagažą
-test_cancel_airline - atšaukti aviakompaniją
-test_get_flight_by_baggage - skrydis pagal bagažą
-test_update_passenger_info - atnaujinti keleivio informaciją
-test_register_passenger_invalid_info - neteisinga keleivio informacija
