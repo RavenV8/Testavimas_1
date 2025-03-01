@@ -1,3 +1,6 @@
+https://youtu.be/kipdwTYuuZA
+Programa yra skirta skrydžiams tikrinti
+
 Paleidimas
 docker-compose up --build
 python3 -m unittest test_app.py -v
