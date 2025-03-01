@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  neo4j:
+    image: neo4j:4.4
+    container_name: neo4j
+    environment:
+      - NEO4J_AUTH=neo4j/test
+    ports:
+      - "7474:7474"   # HTTP access to Neo4j
+      - "7687:7687"   # Bolt access to Neo4j
+  
+  flask_app:
+    build:
+      context: ./app
+    container_name: flask_app
+    ports:
+      - "5000:5000"
+    depends_on:
+      - neo4j
